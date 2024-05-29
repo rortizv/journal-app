@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { AppBar, Grid, IconButton, Toolbar, Typography } from "@mui/material"
 import { LogoutOutlined, MenuOutlined } from "@mui/icons-material"
 
@@ -28,4 +29,8 @@ export const NavBar = ({drawerWidth}) => {
         </Toolbar>
     </AppBar>
   )
+}
+
+NavBar.propTypes = {
+  drawerWidth: PropTypes.number
 }
